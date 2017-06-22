@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.preference.PreferenceCategory
+        android:key="account_settings"
+        android:title="Account Settings">
+        <android.support.v7.preference.ListPreference
+            android:key="demo_list_preference"
+            android:title="ListPreference"/>
+        <com.saurabhpatel.custompreferencesample.SampleCustomPreference
+            android:key="sample_custom"
+            android:layout="@layout/layout_pref"
+            android:title="Custom Preference Demo"/>
+    </android.support.v7.preference.PreferenceCategory>
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Downloads">
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="settings_key_allow_cellular_downloads"
+            android:title="Cellular downloads"/>
+    </android.support.v7.preference.PreferenceCategory>
+
+</android.support.v7.preference.PreferenceScreen>
